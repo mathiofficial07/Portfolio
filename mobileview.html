@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile View</title>
+    <style>
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, .footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0 1em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 1em;
+}
+
+
+.nav ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav li {
+    margin: 0.5em 0;
+}
+
+@media screen and (min-width: 768px) {
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 1em;
+    }
+
+    .main-content section {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header, .footer {
+        padding: 2em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to My Responsive Website</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dui nec nisi volutpat, non convallis mi mattis.</p>
+        </section>
+        <section>
+            <h2>Services</h2>
+            <p>We offer a variety of services to meet your needs. Contact us to learn more!</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
