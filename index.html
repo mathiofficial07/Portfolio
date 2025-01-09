@@ -1,0 +1,260 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathiyazhagan R | Portfolio</title>
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #1a1a2e;
+    color: #ecf0f1;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    background: #0f3460;
+    color: #ecf0f1;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00a8cc;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.header .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.header .nav-links a:hover {
+    color: #00a8cc;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #162447, #1b1b2f);
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.profile-pic {
+    margin-bottom: 1.5rem;
+}
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #00a8cc;
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #00a8cc;
+    animation: textFadeIn 2s ease-in-out;
+}
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Experience Section */
+.experience {
+    padding: 6rem 2rem;
+    background: #1b262c;
+}
+.experience-item {
+    background: #162447;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects Section */
+.projects {
+    padding: 6rem 2rem;
+}
+.project-card {
+    background: #162447;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 6rem 2rem;
+    background: #1b262c;
+}
+
+/* Contact Section */
+.contact {
+    background: #0f3460;
+    padding: 8rem 2rem;
+    color: #ecf0f1;
+}
+
+/* Footer */
+footer {
+    background: #162447;
+    padding: 2rem 0;
+    text-align: center;
+    color: #ecf0f1;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mathiyazhagan R</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" alt="Mathiyazhagan R">
+            </div>
+            <h2 style="color:crimson;">Hi, I'm Mathiyazhagan R</h2>
+            <p>I'm an aspiring software engineer with a passion for problem-solving and innovative technology solutions. I enjoy working on dynamic web development and robust software projects, continuously learning new tools to enhance my skill set.</p>
+            <a href="#projects" class="cta-btn">See My Projects</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Billing Management System</h3>
+                    <p>Designed a Restaurant Menu Template can showcase the menu items to the customer which they could pick the
+                        respective items after picking the cost of picked item would be diplayed which satisfies customer .Time
+                        efficiency saving time streamlines billing operations and compliance to reduce legal risks.
+                    <strong>Tech Stack:</strong> Python</p>
+                </div>
+                <div class="project-card">
+                    <h3>Online Ticket Booking</h3>
+                    <p>Designed and implemented a comprehensive Online ticket booking system using JDBC to ensure that the
+                        data to be stored in Mysql database through the mysql connector using Java..User's booked ticked can be securely
+                        stored in the mysql database .It would be retrieved by the user which could showcase in the booking details.Enhanced
+                        features like digital receipts and payment confirmation seamlessly.<strong>Tech Stack:</strong> Java, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>MySQL Certification – HackerRank (2024)</li>
+                <li>Data Structures with C & C++ – Udemy (2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievement-card">
+                <h3>LeetCode</h3>
+                <p>Solved 29+ problems | Global Ranking: 2,329,754</p>
+            </div>
+            <div class="achievement-card">
+                <h3>CodeChef</h3>
+                <p>Solved 77+ problems | Bronze Badge</p>
+            </div>
+            <div class="achievement-card">
+                <h3>HackerRank</h3>
+                <p>3-star in Java | Rank: 581,804</p>
+            </div>
+            <div class="achievement-card">
+                <h3>SkillRack</h3>
+                <p>Solved 600+ problems</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>I’m open to collaborations and discussions on web and software projects. Feel free to reach out!</p>
+            <ul>
+                <li><strong>Phone:</strong> +91 7812871582</li>
+                <li><strong>Email:</strong> <a href="mailto:mathiyazhagan.r2023ece@sece.ac.in">mathiyazhagan.r2023ece@sece.ac.in</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mathi-yazhagan-4367a8291" target="_blank">Mathiyazhagan R</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/mathiofficial07" target="_blank">mathiofficial07</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mathiyazhagan R. All rights reserved.</p>
+    </footer>
+</body>
+</html>
